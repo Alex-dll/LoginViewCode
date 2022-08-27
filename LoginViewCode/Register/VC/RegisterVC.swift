@@ -32,8 +32,6 @@ extension RegisterVC: RegisterScreenProtocol {
     func tappedRegisterbutton() {
         print("Register")
     }
-    
-    
 }
 
 extension RegisterVC: UITextFieldDelegate {

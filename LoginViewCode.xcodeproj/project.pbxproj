@@ -17,6 +17,7 @@
 		FAA83A0428BA360200BDB66A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA83A0328BA360200BDB66A /* LoginVC.swift */; };
 		FAA83A0928BA360400BDB66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA83A0828BA360400BDB66A /* Assets.xcassets */; };
 		FAA83A0C28BA360400BDB66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA83A0A28BA360400BDB66A /* LaunchScreen.storyboard */; };
+		FAD8089B28BAB9FC00BBEF9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAA83A0828BA360400BDB66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA83A0B28BA360400BDB66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA83A0D28BA360400BDB66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				FAA83A0828BA360400BDB66A /* Assets.xcassets */,
 				FAA83A0A28BA360400BDB66A /* LaunchScreen.storyboard */,
 				FAA83A0D28BA360400BDB66A /* Info.plist */,
+				FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA83A0C28BA360400BDB66A /* LaunchScreen.storyboard in Resources */,
+				FAD8089B28BAB9FC00BBEF9C /* GoogleService-Info.plist in Resources */,
 				FA3B043428BA9B7900523273 /* .gitignore in Resources */,
 				FAA83A0928BA360400BDB66A /* Assets.xcassets in Resources */,
 			);
@@ -415,6 +419,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,6 +448,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
