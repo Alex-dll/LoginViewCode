@@ -10,13 +10,22 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    // O AppDelegate é responsavel pelo ciclo de vida e configuração do aplicativo: Poods, firabase e tals
+    
+    //O SceneDelegate é responsavel pelo que é mostrado na tela, e com ele nos podemos manipular e gerenciar a forma como o aplicativo é exibido.
 
-
+    // Este metodo irá criar uma nova UIWindow, e definir o controlador de visualização raiz(root) e tornar a window a janela principal a ser exibida ( <div id="root /> )
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        let vc:ViewController = ViewController()
+        let navVC = UINavigationController(rootViewController: vc)
+        window.rootViewController = navVC
+        window.makeKeyAndVisible()
+        self.window = window
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
