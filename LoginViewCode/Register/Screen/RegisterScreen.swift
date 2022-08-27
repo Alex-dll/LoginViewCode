@@ -7,12 +7,24 @@
 
 import UIKit
 
+protocol RegisterScreenProtocol: AnyObject {
+    func tappedBackButton()
+    func tappedRegisterbutton()
+}
+
 class RegisterScreen: UIView {
+    private weak var delegate: RegisterScreenProtocol?
+    
+    func delegate(delegate: RegisterScreenProtocol?){
+        self.delegate = delegate
+    }
+    
     
     lazy var backButton: UIButton = {
       let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "back"), for: .normal)
+        button.addTarget(self, action: #selector(tappedBackButton), for: .touchUpInside)
         return button
     }()
     
@@ -59,6 +71,7 @@ class RegisterScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 3/255, green: 58/255, blue: 51/255, alpha: 1.0)
+        button.addTarget(self, action: #selector(tappedRegisterButton), for: .touchUpInside)
         return button
     }()
 
@@ -79,6 +92,19 @@ class RegisterScreen: UIView {
     
     private func configBackGroud(){
         self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
+    }
+    
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
+    @objc private func tappedBackButton() {
+        self.delegate?.tappedBackButton()
+    }
+    
+    @objc private func tappedRegisterButton() {
+        self.delegate?.tappedRegisterbutton()
     }
     
     required init?(coder: NSCoder) {

@@ -34,7 +34,6 @@ extension LoginVC: LoginScreenProtocol {
     }
     
     func actionRegisterButton() {
-        print("deu certo register")
         let vc: RegisterVC = RegisterVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }

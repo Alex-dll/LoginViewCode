@@ -18,8 +18,27 @@ class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.registerScreen?.configTextFieldDelegate(delegate: self)
+        self.registerScreen?.delegate(delegate: self)
     }
 
+}
+
+extension RegisterVC: RegisterScreenProtocol {
+    func tappedBackButton() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func tappedRegisterbutton() {
+        print("Register")
+    }
+    
+    
+}
+
+extension RegisterVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
