@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FAA6C03A28BA41CC009556D8 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6C03928BA41CC009556D8 /* LoginScreen.swift */; };
 		FAA6C04128BA735A009556D8 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6C04028BA735A009556D8 /* RegisterVC.swift */; };
+		FAA6C04328BA74DA009556D8 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6C04228BA74DA009556D8 /* RegisterScreen.swift */; };
 		FAA83A0028BA360200BDB66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA839FF28BA360200BDB66A /* AppDelegate.swift */; };
 		FAA83A0228BA360200BDB66A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA83A0128BA360200BDB66A /* SceneDelegate.swift */; };
 		FAA83A0428BA360200BDB66A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA83A0328BA360200BDB66A /* LoginVC.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		FAA6C03928BA41CC009556D8 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FAA6C04028BA735A009556D8 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		FAA6C04228BA74DA009556D8 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		FAA839FC28BA360200BDB66A /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA839FF28BA360200BDB66A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA83A0128BA360200BDB66A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		FAA6C03C28BA72E9009556D8 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				FAA6C04228BA74DA009556D8 /* RegisterScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA6C04328BA74DA009556D8 /* RegisterScreen.swift in Sources */,
 				FAA83A0428BA360200BDB66A /* LoginVC.swift in Sources */,
 				FAA6C03A28BA41CC009556D8 /* LoginScreen.swift in Sources */,
 				FAA83A0028BA360200BDB66A /* AppDelegate.swift in Sources */,
