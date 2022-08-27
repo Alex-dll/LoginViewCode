@@ -84,7 +84,7 @@ class LoginScreen: UIView {
         self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
     }
     
-    private func configSuperView(){
+    private func configSuperView() {
         self.addSubview(loginLabel)
         self.addSubview(self.logoAppImageView)
         self.addSubview(self.emailTextField)
@@ -93,11 +93,16 @@ class LoginScreen: UIView {
         self.addSubview(self.registerButton)
     }
     
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setUpContraintes(){
+    private func setUpContraintes() {
         NSLayoutConstraint.activate([
             self.loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
             self.loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
