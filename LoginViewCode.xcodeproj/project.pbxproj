@@ -21,6 +21,8 @@
 		FAD8089E28BADA0800BBEF9C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8089D28BADA0800BBEF9C /* Alert.swift */; };
 		FAD808A328BAE27F00BBEF9C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808A228BAE27F00BBEF9C /* HomeVC.swift */; };
 		FAD808A528BAE2A500BBEF9C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */; };
+		FAD808A828BAEE1B00BBEF9C /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808A728BAEE1B00BBEF9C /* UserDetailTableViewCell.swift */; };
+		FAD808AB28BAFE5000BBEF9C /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808AA28BAFE5000BBEF9C /* DataUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		FAD8089D28BADA0800BBEF9C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FAD808A228BAE27F00BBEF9C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FAD808A728BAEE1B00BBEF9C /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FAD808AA28BAFE5000BBEF9C /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 		FAD8089F28BAE24C00BBEF9C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FAD808A928BAFE3D00BBEF9C /* Model */,
+				FAD808A628BAEDDA00BBEF9C /* Cell */,
 				FAD808A128BAE25F00BBEF9C /* Screen */,
 				FAD808A028BAE25800BBEF9C /* VC */,
 			);
@@ -190,6 +196,22 @@
 				FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		FAD808A628BAEDDA00BBEF9C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAD808A728BAEE1B00BBEF9C /* UserDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAD808A928BAFE3D00BBEF9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD808AA28BAFE5000BBEF9C /* DataUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +334,9 @@
 				FAD808A328BAE27F00BBEF9C /* HomeVC.swift in Sources */,
 				FAA83A0428BA360200BDB66A /* LoginVC.swift in Sources */,
 				FAA6C03A28BA41CC009556D8 /* LoginScreen.swift in Sources */,
+				FAD808AB28BAFE5000BBEF9C /* DataUser.swift in Sources */,
 				FAA83A0028BA360200BDB66A /* AppDelegate.swift in Sources */,
+				FAD808A828BAEE1B00BBEF9C /* UserDetailTableViewCell.swift in Sources */,
 				FAD808A528BAE2A500BBEF9C /* HomeScreen.swift in Sources */,
 				FAA83A0228BA360200BDB66A /* SceneDelegate.swift in Sources */,
 				FAA6C04128BA735A009556D8 /* RegisterVC.swift in Sources */,
