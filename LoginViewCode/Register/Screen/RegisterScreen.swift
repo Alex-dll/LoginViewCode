@@ -8,8 +8,8 @@
 import UIKit
 
 protocol RegisterScreenProtocol: AnyObject {
-    func tappedBackButton()
-    func tappedRegisterbutton()
+    func actionBackButton()
+    func actionRegisterButton()
 }
 
 class RegisterScreen: UIView {
@@ -24,7 +24,7 @@ class RegisterScreen: UIView {
       let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "back"), for: .normal)
-        button.addTarget(self, action: #selector(tappedBackButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(actionBackButton), for: .touchUpInside)
         return button
     }()
     
@@ -71,7 +71,7 @@ class RegisterScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 3/255, green: 58/255, blue: 51/255, alpha: 1.0)
-        button.addTarget(self, action: #selector(tappedRegisterButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(actionRegisterButton), for: .touchUpInside)
         return button
     }()
 
@@ -88,7 +88,7 @@ class RegisterScreen: UIView {
         self.configRegisterButtonConstraint()
         //----------------------------------
         
-        self.setUpContraints()
+//        self.setUpContraints()
         self.configButtonEnable(false)
     }
     
@@ -109,12 +109,12 @@ class RegisterScreen: UIView {
         self.passwordTextField.delegate = delegate
     }
     
-    @objc private func tappedBackButton() {
-        self.delegate?.tappedBackButton()
+    @objc private func actionBackButton() {
+        self.delegate?.actionBackButton()
     }
     
-    @objc private func tappedRegisterButton() {
-        self.delegate?.tappedRegisterbutton()
+    @objc private func actionRegisterButton() {
+        self.delegate?.actionRegisterButton()
     }
     
     public func validateTextFields() {
@@ -138,12 +138,20 @@ class RegisterScreen: UIView {
         }
     }
     
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setUpContraints(){
-        NSLayoutConstraint.activate([
+//    private func setUpContraints(){
+//        NSLayoutConstraint.activate([
 //
 //            self.imageAddUser.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
 //            self.imageAddUser.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -169,8 +177,8 @@ class RegisterScreen: UIView {
 //            self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
 //
             
-        ])
-    }
+//        ])
+//    }
     
     
     func configImageAddUserConstraint() {

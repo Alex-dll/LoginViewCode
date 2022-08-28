@@ -18,6 +18,9 @@
 		FAA83A0928BA360400BDB66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA83A0828BA360400BDB66A /* Assets.xcassets */; };
 		FAA83A0C28BA360400BDB66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA83A0A28BA360400BDB66A /* LaunchScreen.storyboard */; };
 		FAD8089B28BAB9FC00BBEF9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */; };
+		FAD8089E28BADA0800BBEF9C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8089D28BADA0800BBEF9C /* Alert.swift */; };
+		FAD808A328BAE27F00BBEF9C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808A228BAE27F00BBEF9C /* HomeVC.swift */; };
+		FAD808A528BAE2A500BBEF9C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		FAA83A0B28BA360400BDB66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA83A0D28BA360400BDB66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAD8089D28BADA0800BBEF9C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FAD808A228BAE27F00BBEF9C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,8 @@
 		FAA839FE28BA360200BDB66A /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8089F28BAE24C00BBEF9C /* Home */,
+				FAD8089C28BAD9F000BBEF9C /* Alert */,
 				FAA6C03B28BA72DC009556D8 /* Register */,
 				FAA6C03628BA4168009556D8 /* Login */,
 				FAA839FF28BA360200BDB66A /* AppDelegate.swift */,
@@ -149,6 +157,39 @@
 				FAD8089A28BAB9FC00BBEF9C /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
+			sourceTree = "<group>";
+		};
+		FAD8089C28BAD9F000BBEF9C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				FAD8089D28BADA0800BBEF9C /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		FAD8089F28BAE24C00BBEF9C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAD808A128BAE25F00BBEF9C /* Screen */,
+				FAD808A028BAE25800BBEF9C /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAD808A028BAE25800BBEF9C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FAD808A228BAE27F00BBEF9C /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FAD808A128BAE25F00BBEF9C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAD808A428BAE2A500BBEF9C /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,11 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA6C04328BA74DA009556D8 /* RegisterScreen.swift in Sources */,
+				FAD808A328BAE27F00BBEF9C /* HomeVC.swift in Sources */,
 				FAA83A0428BA360200BDB66A /* LoginVC.swift in Sources */,
 				FAA6C03A28BA41CC009556D8 /* LoginScreen.swift in Sources */,
 				FAA83A0028BA360200BDB66A /* AppDelegate.swift in Sources */,
+				FAD808A528BAE2A500BBEF9C /* HomeScreen.swift in Sources */,
 				FAA83A0228BA360200BDB66A /* SceneDelegate.swift in Sources */,
 				FAA6C04128BA735A009556D8 /* RegisterVC.swift in Sources */,
+				FAD8089E28BADA0800BBEF9C /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
